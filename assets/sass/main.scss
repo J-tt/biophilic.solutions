@@ -51,7 +51,7 @@ and (max-device-width : 900px) {
 }
 .tile.is-child.card {
 	.card-footer {
-		align-self: baseline; 
+		margin-top: auto;
 	}
 	display: flex;
 	flex-direction: column;
