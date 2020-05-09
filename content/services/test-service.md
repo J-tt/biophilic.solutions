@@ -1,7 +1,12 @@
 ---
-title: Test Service
+title: Design Consultancy and Project Management
 Description: |-
-  * Test 1
+  Our diverse team of professionals ensure a quality wholistic approach.
 
-    Test 2
+  * Architecture
+  * Urban design and planning
+  * Streetscapes
+  * Office spaces
+  * Community consultation
+  * Landscape design
 ---
