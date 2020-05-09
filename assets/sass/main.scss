@@ -49,3 +49,10 @@ and (max-device-width : 900px) {
 		justify-content: center;
 	}
 }
+.tile.is-child.card {
+	.card-footer {
+		align-self: baseline; 
+	}
+	display: flex;
+	flex-direction: column;
+}

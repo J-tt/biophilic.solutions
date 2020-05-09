@@ -53,12 +53,12 @@
 	  </section>
 	  <section class="section">
 		  <div class="container">
-			  <div class="columns">
+			  <div class="tile is-ancestor">
 				  {{ range where .Site.RegularPages "Section" "blog" }}
-				  <div class="column">
-					  <div class="card">
+				  <div class="tile is-parent is-4">
+					  <div class="tile is-child card">
 						  <div class="card-image">
-							  <figure class="image is-4by4">
+							  <figure class="image">
 								  <img src="{{ .Params.thumbnail }}">
 							  </figure>
 						  </div>

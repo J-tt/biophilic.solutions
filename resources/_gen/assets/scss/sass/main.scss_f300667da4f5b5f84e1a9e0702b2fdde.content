@@ -7054,3 +7054,9 @@ html {
     display: flex;
     flex-flow: column;
     justify-content: center; }
+
+.tile.is-child.card {
+  display: flex;
+  flex-direction: column; }
+  .tile.is-child.card .card-footer {
+    align-self: baseline; }
