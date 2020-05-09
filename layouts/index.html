@@ -25,10 +25,11 @@
 	  <section class="section" id="#down">
 		  <div class="container">
 			  <h1 class="title">Services</h1>
+			  {{ $optBlock := dict "display" "block" }}
 			  {{ range (where .Pages "Section" "services") }}
 			  <div>
 				  <h2 class="subtitle">{{ .Title }}</h1>
-				  <p>{{ .Description | .RenderString}}<p>
+				  <p>{{ .Render "Description" }}<p>
 			  </div>
 			  {{ end }}
 	  </section> 
