@@ -59,7 +59,7 @@
 					  <div class="card">
 						  <div class="card-image">
 							  <figure class="image is-4by4">
-								  <img src="https://placehold.it/800x1000">
+								  <img src="{{ .Params.thumbnail }}">
 							  </figure>
 						  </div>
 						  <header class="card-header">
@@ -70,7 +70,13 @@
 						  </div>
 						  <footer class="card-footer">
 							  <div class="card-footer-item">
-								  <p>By Test Tester</p>
+								  <p>By {{ .Params.author }} </p>
+							  </div>
+							  <div class="card-footer-item">
+								  <time>{{ .Params.date.Format "January 2, 2006" }}</time>
+							  </div>
+							  <div class="card-footer-item">
+								  <a href="{{ .RelPermalink}}">Read More</a>
 							  </div>
 						  </footer>
 					  </div>
