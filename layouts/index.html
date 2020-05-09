@@ -1,26 +1,15 @@
-{{ $sass := resources.Get "sass/main.scss" }}
-{{ $style := $sass | resources.ToCSS }}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Biophilic Solutions</title>
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-  </head>
-  <body>
+{{ partial "header/site-header.html" . }}
 	  <section class="hero is-link is-fullheight is-primary is-bold">
 		  <div class="hero-body">
 			  <div class="container">
 				  <h1 class="title page-title">
 					  Biophilic Solutions
 				  </h1>
+			  </div>
+		  </div>
 				  <h2 class="subtitle has-text-centered scroll-chevron">
 					  <a href="#services"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
 				  </h2>
-			  </div>
-		  </div>
 	  </section>
 	  <section class="section height-override" id="services">
 		  <div class="container">
@@ -36,10 +25,10 @@
 					  </div>
 					  {{ end }}
 				  </div>
-				  <h2 class="subtitle has-text-centered scroll-chevron">
-					  <a href="#blog"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
-				  </h2>
 			  </div>
+			  <h2 id="second-chevron" class="subtitle has-text-centered scroll-chevron">
+				  <a href="#blog"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+			  </h2>
 		  </div>
 	  </section> 
 	  <section class="hero is-info" id="blog">
@@ -85,9 +74,4 @@
 			  </div>
 		  </div>
 	  </section>
-
-	  
-	  <p style="display:none"> Rendered with Hugo {{ .Site.Hugo.Version }} </p>
-  </body>
-  <script src="https://use.fontawesome.com/638ca2e2bf.js"></script>
-</html>
+{{ partial "footer/site-footer.html" . }}

@@ -1,0 +1,13 @@
+{{ $sass := resources.Get "sass/main.scss" }}
+{{ $style := $sass | resources.ToCSS }}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Biophilic Solutions</title>
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  </head>
+  <body>
+	  <div class="content">
