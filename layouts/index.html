@@ -2,7 +2,6 @@
 {{ $style := $sass | resources.ToCSS }}
 <!DOCTYPE html>
 <html lang="en">
-	<!-- Rendered with Hugo {{ .Site.Hugo.Version }} -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,6 +34,7 @@
 			  {{ end }}
 	  </section> 
 	  
+	  <p style="display:none"> Rendered with Hugo {{ .Site.Hugo.Version }} </p>
 	  <!---	<ul>
     {{ range (where .Pages "Section" "blog") }}
     <li>
