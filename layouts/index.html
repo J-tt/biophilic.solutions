@@ -29,7 +29,7 @@
 			  {{ range (where .Pages "Section" "services") }}
 			  <div>
 				  <h2 class="subtitle">{{ .Title }}</h1>
-				  <p>{{ .Render "Description" }}<p>
+				  <p>{{ .Render "description" }}<p>
 			  </div>
 			  {{ end }}
 	  </section> 
