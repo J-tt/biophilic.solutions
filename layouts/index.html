@@ -1,14 +1,40 @@
+{{ $sass := resources.Get "sass/main.scss" }}
+{{ $style := $sass | resources.ToCSS }}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Biophilic Solutions</title>
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
   <body>
-    <h1>Nice. It's looking good already.</h1>
-	<ul>
+	  <section class="hero is-link is-fullheight is-primary is-bold">
+		  <div class="hero-body">
+			  <div class="container">
+				  <h1 class="title page-title">
+					  Biophilic Solutions
+				  </h1>
+				  <h2 class="subtitle has-text-centered scroll-chevron">
+					  <a href="#down"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+				  </h2>
+			  </div>
+		  </div>
+	  </section>
+	  <section class="section" id="#down">
+		  <div class="container">
+			  <h1 class="title">Services</h1>
+			  <h2 class="subtitle">Lorem ipsum</h2> 
+			  {{ range (where .Pages "Section" "services") }}
+			  <div>
+				  <h1>{{ .Title }}</h1>
+				  <p>{{ .Description }}<p>
+			  </div>
+			  {{ end }}
+	  </section> 
+	  
+	  <!---	<ul>
     {{ range (where .Pages "Section" "blog") }}
     <li>
       <a href="{{ .RelPermalink }}">
@@ -17,5 +43,7 @@
     </li>
     {{ end }}
   </ul>
+-->
   </body>
+  <script src="https://use.fontawesome.com/638ca2e2bf.js"></script>
 </html>
