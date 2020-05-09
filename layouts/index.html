@@ -25,11 +25,10 @@
 	  <section class="section" id="#down">
 		  <div class="container">
 			  <h1 class="title">Services</h1>
-			  <h2 class="subtitle">Lorem ipsum</h2> 
 			  {{ range (where .Pages "Section" "services") }}
 			  <div>
-				  <h1>{{ .Title }}</h1>
-				  <p>{{ .Description }}<p>
+				  <h2 class="subtitle">{{ .Title }}</h1>
+				  <p>{{ .Description | .RenderString}}<p>
 			  </div>
 			  {{ end }}
 	  </section> 
