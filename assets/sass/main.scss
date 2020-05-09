@@ -15,6 +15,7 @@ $grey-light: #E6A06F;
 @import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 
 // Custom Element Styles
@@ -41,4 +42,8 @@ and (max-device-width : 900px) {
 	.page-title {
 		font-size: 8em;
 	}
+}
+
+.renderList > ul {
+	list-style: square;
 }

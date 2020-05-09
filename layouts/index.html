@@ -22,16 +22,17 @@
 			  </div>
 		  </div>
 	  </section>
-	  <section class="section" id="#down">
-		  <div class="container">
-			  <h1 class="title">Services</h1>
-			  {{ $optBlock := dict "display" "block" }}
-			  {{ range (where .Pages "Section" "services") }}
-			  <div>
-				  <h2 class="subtitle">{{ .Title }}</h1>
-				  <p>{{ .Render "Description" }}<p>
+	  <section class="section">
+		  <div class="container" id="down">
+			  <h1 class="title is-1">Services</h1>
+			  <div class="columns">
+				  {{ range where .Site.Pages "Section" "services" }}
+				  <div class="column">
+					  <h2 class="subtitle is-3 has-text-link">{{ .Title }}</h1>
+					  <div class="renderList">{{ .RenderString .Description }}</div>
+				  </div>
+				  {{ end }}
 			  </div>
-			  {{ end }}
 	  </section> 
 	  
 	  <p style="display:none"> Rendered with Hugo {{ .Site.Hugo.Version }} </p>
