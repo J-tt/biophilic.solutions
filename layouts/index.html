@@ -17,35 +17,72 @@
 					  Biophilic Solutions
 				  </h1>
 				  <h2 class="subtitle has-text-centered scroll-chevron">
-					  <a href="#down"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+					  <a href="#services"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
 				  </h2>
 			  </div>
 		  </div>
 	  </section>
+	  <section class="section height-override" id="services">
+		  <div class="container">
+			  <div class="contentholder">
+				  <h1 class="title is-1">Services</h1>
+				  <div class="tile is-ancestor">
+					  {{ range where .Site.RegularPages "Section" "services" }}
+					  <div class="tile is-parent">
+						  <div class="tile is-child box">
+							  <h2 class="subtitle is-3 has-text-link">{{ .Title }}</h1>
+							  <div class="renderList">{{ .RenderString .Description }}</div>
+						  </div>
+					  </div>
+					  {{ end }}
+				  </div>
+				  <h2 class="subtitle has-text-centered scroll-chevron">
+					  <a href="#blog"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+				  </h2>
+			  </div>
+		  </div>
+	  </section> 
+	  <section class="hero is-info" id="blog">
+		  <div class="hero-body">
+			  <div class="container">
+				  <h1 class="title">
+					  Blog Posts
+				  </h1>
+			  </div>
+		  </div>
+	  </section>
 	  <section class="section">
-		  <div class="container" id="down">
-			  <h1 class="title is-1">Services</h1>
+		  <div class="container">
 			  <div class="columns">
-				  {{ range where .Site.Pages "Section" "services" }}
+				  {{ range where .Site.RegularPages "Section" "blog" }}
 				  <div class="column">
-					  <h2 class="subtitle is-3 has-text-link">{{ .Title }}</h1>
-					  <div class="renderList">{{ .RenderString .Description }}</div>
+					  <div class="card">
+						  <div class="card-image">
+							  <figure class="image is-4by4">
+								  <img src="{{ .imageLink }}">
+							  </figure>
+						  </div>
+						  <header class="card-header">
+							  <!-- -->
+							  <a href="{{ .RelPermalink }}"><h2 class="card-header-title">{{ .Title }}</h1></a>
+						  </header>
+						  <div class="card-content">
+							  <div class="renderList">{{ .Summary }}</div>
+						  </div>
+						  <footer class="card-footer">
+							  <div class="card-footer-item">
+								  <p>By Test Tester</p>
+							  </div>
+						  </footer>
+					  </div>
 				  </div>
 				  {{ end }}
 			  </div>
-	  </section> 
+		  </div>
+	  </section>
+
 	  
 	  <p style="display:none"> Rendered with Hugo {{ .Site.Hugo.Version }} </p>
-	  <!---	<ul>
-    {{ range (where .Pages "Section" "blog") }}
-    <li>
-      <a href="{{ .RelPermalink }}">
-        {{ .Title }}
-      </a>
-    </li>
-    {{ end }}
-  </ul>
--->
   </body>
   <script src="https://use.fontawesome.com/638ca2e2bf.js"></script>
 </html>

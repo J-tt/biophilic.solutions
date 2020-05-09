@@ -7,16 +7,7 @@ $grey-light: #E6A06F;
 
 
 // Import only what you need from Bulma
-@import "../node_modules/bulma/sass/utilities/_all.sass";
-@import "../node_modules/bulma/sass/base/_all.sass";
-@import "../node_modules/bulma/sass/elements/button.sass";
-@import "../node_modules/bulma/sass/elements/container.sass";
-@import "../node_modules/bulma/sass/elements/title.sass";
-@import "../node_modules/bulma/sass/form/_all.sass";
-@import "../node_modules/bulma/sass/components/navbar.sass";
-@import "../node_modules/bulma/sass/layout/hero.sass";
-@import "../node_modules/bulma/sass/grid/columns.sass";
-@import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/bulma.sass";
 
 // Custom Element Styles
 
@@ -46,4 +37,15 @@ and (max-device-width : 900px) {
 
 .renderList > ul {
 	list-style: square;
+	padding-inline-start: 40px;
+}
+
+.height-override {
+	min-height: 100vh;
+	display: flex;
+	.container {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+	}
 }
