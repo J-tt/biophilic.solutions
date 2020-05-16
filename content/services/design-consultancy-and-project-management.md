@@ -6,12 +6,8 @@ Description: |-
   * Biophilic design
   * Urban design and planning
   * Architecture
-
-    Streetscapes
-
-    Office spaces
-
-    Community consultation
-
-    Landscape design
+  * Streetscapes
+  * Office spaces
+  * Community consultation
+  * Landscape design
 ---
