@@ -3,10 +3,15 @@ title: Design Consultancy and Project Management
 Description: |-
   Our diverse team of professionals ensure a quality wholistic approach.
 
-  * Architecture
+  * Biophilic design
   * Urban design and planning
-  * Streetscapes
-  * Office spaces
-  * Community consultation
-  * Landscape design
+  * Architecture
+
+    Streetscapes
+
+    Office spaces
+
+    Community consultation
+
+    Landscape design
 ---
