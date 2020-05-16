@@ -1,14 +1,24 @@
 ---
-title: Creative Nature Installations for office, home or garden
-Description: "- Bringing nature in all forms and shapes\r
+title: Biophilic Design for the office
+Description: >-
+  * Utilise patterns, forms, materials and greenery to inject nature into office
+  spaces
 
-  - Office foyers\r
+    Increase productivity and creativity
 
-  - Homes inside and out\r
+    Decrease stress
 
-  - Connecting the built and the natural\r
+    Improve air quality and flow
 
-  - Provides a ‘daily dose’ of nature\r
+    Improve lighting options
 
-  - Beautiful"
+    Enhance connection between the built and natural environment
+
+    Increases presenteeism
+
+    Provides a ‘daily dose’ of nature
+
+    Increase aesthetics
+
+    Meet Green Star/WELL rating targets
 ---
