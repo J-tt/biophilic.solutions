@@ -1,19 +1,12 @@
 ---
 title: Nature Pods
-Description: "A deep and immersive nature experience in the city to sit and be
-  restored in.\r
+Description: |-
+  A walk-in, sit down immersive and restoring nature experience.
 
-  \r
-
-  - City squares, roof tops, podiums\r
-
-  - Combines multiple biophilic attributes\r
-
-  - Restorative and de-stressing\r
-
-  - Biosolar rooftop provides own power\r
-
-  - 5m x 5m temporary or permanent\r
-
-  - Sustainably built and operated."
+  * City squares, roof tops, podiums
+  * Combines multiple biophilic attributes
+  * Restorative and de-stressing
+  * Biosolar rooftop provides own power
+  * 5m x 5m temporary or permanent
+  * Sustainably built and operated.
 ---
