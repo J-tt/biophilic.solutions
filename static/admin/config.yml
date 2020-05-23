@@ -17,7 +17,6 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
-	  #default: "/uploads/chocolate-dogecoin.jpg"
 
   - name: 'services'
     label: 'Services'
@@ -29,3 +28,19 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'Description', widget: 'markdown' }
+
+  - name: 'people'
+    label: 'People'
+    folder: 'content/people'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'name', name: 'Name', widget: 'string' }
+      - { label: 'title', name: 'Title', widget: 'string' }
+      - { label: 'bio', name: 'Bio', widget: 'markdown' }
+      - { label: 'image', name: 'Image', widget: 'image' }
+      - { label: 'linkedin', name: 'LinkedIn', widget: 'string' }
+      - { label: 'twitter', name: 'Twitter', widget: 'string' }
+      - { label: 'email', name: 'Email', widget: 'string' }
