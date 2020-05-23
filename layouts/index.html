@@ -87,6 +87,7 @@
 		  <div class="container">
 			  <div class="contentholder">
             <div class="columns">
+					      {{ range where .Site.RegularPages "Section" "people" }}
                 <div class="column is-half">
                     <div class="card">
                         <div class="card-content">
@@ -97,20 +98,21 @@
                                     </figure>
                                 </div>
                                 <div class="media-content">
-                                    <p class="title is-3 is-marginless">Dr Jana Soderlund</p>
-                                    <p class="title is-5 is-marginless">Biophilic Design Consultant; Sustainability Professional</p>
+                                    <p class="title is-3 is-marginless">{{ .Name }}</p>
+                                    <p class="title is-5 is-marginless">{{ .Title }}</p>
                                 </div>
                             </div>
                             <div class="content">
-                                An adventurous and diverse life, from science to the arts has developed a creative, yet grounded and astute, ability to design and find solutions with a comprehensive and wholistic understanding. I am an independent researcher with innovative ideas who shares knowledge and works collaboratively to achieve common goals. This has involved projects with government, industry, community and academia.
+                                {{ .RenderString .Params.bio }}
                                 <br>
                             </div>
                         </div>
                         <footer class="title is-3 card-footer">
-                            <a class="card-footer-item" href="linkedin"><i class="fab fa-linkedin"></i></a> <a class="card-footer-item" href="email"><i class="fas fa-envelope"></i></a> <a class="card-footer-item" href="twitter"><i class="fab fa-twitter-square"></i></a></p>
+                            <a class="card-footer-item" href="{{ .Params.linkedin }}"><i class="fab fa-linkedin"></i></a> <a class="card-footer-item" href="{{ .Params.email }}"><i class="fas fa-envelope"></i></a> <a class="card-footer-item" href="{{ .Params.twitter }}"><i class="fab fa-twitter-square"></i></a></p>
                         </footer>
                     </div>
                 </div>
+                {{ end }}
             </div>
         </div>
 		  </div>
