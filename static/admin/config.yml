@@ -32,6 +32,7 @@ collections:
   - name: 'people'
     label: 'People'
     folder: 'content/people'
+    identifier_field: name
     create: true
     slug: '{{slug}}'
     editor:
