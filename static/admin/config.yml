@@ -38,10 +38,10 @@ collections:
     editor:
       preview: true
     fields:
-      - { label: 'name', name: 'Name', widget: 'string' }
-      - { label: 'title', name: 'Title', widget: 'string' }
-      - { label: 'bio', name: 'Bio', widget: 'markdown' }
-      - { label: 'image', name: 'Image', widget: 'image' }
-      - { label: 'linkedin', name: 'LinkedIn', widget: 'string' }
-      - { label: 'twitter', name: 'Twitter', widget: 'string' }
-      - { label: 'email', name: 'Email', widget: 'string' }
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Bio', name: 'bio', widget: 'markdown' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'LinkedIn', name: 'linkedin', widget: 'string' }
+      - { label: 'Twitter', name: 'twitter', widget: 'string' }
+      - { label: 'Email', name: 'email', widget: 'string' }
