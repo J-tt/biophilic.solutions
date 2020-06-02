@@ -7082,13 +7082,13 @@ html, body {
   background-repeat: no-repeat; }
 
 .landing-hero {
-  background-image: linear-gradient(141deg, rgba(47, 89, 62, 0.9) 0%, rgba(74, 113, 94, 0.87) 71%, rgba(79, 134, 116, 0.75) 100%), url("/img/marita-kavelashvili-ugnrXk1129g-unsplash.jpg?nf_resize=fit&w=1920"); }
+  background-image: linear-gradient(141deg, rgba(47, 89, 62, 0.9) 0%, rgba(74, 113, 94, 0.87) 71%, rgba(79, 134, 116, 0.75) 100%), url("/img/marita-kavelashvili-ugnrXk1129g-unsplash.webp?nf_resize=fit&w=1920"); }
 
 .blog-post-hero {
-  background-image: linear-gradient(141deg, rgba(21, 157, 198, 0.9) 0%, rgba(50, 152, 220, 0.87) 71%, rgba(67, 137, 229, 0.75) 100%), url("/img/chuttersnap-9AqIdzEc9pY-unsplash.jpg?nf_resize=fit&w=1920"); }
+  background-image: linear-gradient(141deg, rgba(21, 157, 198, 0.9) 0%, rgba(50, 152, 220, 0.87) 71%, rgba(67, 137, 229, 0.75) 100%), url("/img/chuttersnap-9AqIdzEc9pY-unsplash.webp?nf_resize=fit&w=1280"); }
 
 .contact-hero {
-  background-image: linear-gradient(141deg, rgba(31, 25, 26, 0.9) 0%, rgba(54, 54, 54, 0.87) 71%, rgba(70, 64, 63, 0.75) 100%), url("/img/annie-spratt--0tHnuquK-I-unsplash.jpg?nf_resize=fit&w=1920"); }
+  background-image: linear-gradient(141deg, rgba(31, 25, 26, 0.9) 0%, rgba(54, 54, 54, 0.87) 71%, rgba(70, 64, 63, 0.75) 100%), url("/img/annie-spratt-0tHnuquK-I-unsplash.webp?nf_resize=fit&w=1280"); }
 
 @media only screen and (min-device-width: 900px) {
   .page-title {
