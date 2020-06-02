@@ -48,7 +48,7 @@
 					  <div class="tile is-child card">
 						  <div class="card-image">
 							  <figure class="image">
-								  <img src="{{ .Params.thumbnail }}?nf_resize=smartcrop&w=300&h=200">
+								  <img src="{{ .Params.thumbnail }}?nf_resize=smartcrop&w=800&h=600">
 							  </figure>
 						  </div>
 						  <header class="card-header">
@@ -88,10 +88,10 @@
 			  <div class="contentholder">
             <div class="columns">
 					      {{ range where .Site.RegularPages "Section" "people" }}
-                <div class="column is-half">
+                <div class="column is-half-desktop is-two-thirds-tablet is-full-mobile">
                     <div class="card">
                         <div class="card-content">
-                            <div style="display:flex;flex-flow:row;align-items:center;" class="media">
+                            <div class="info-card-media media">
                                 <div class="media-left">
                                     <figure class="image is-128x128">
                                         <img class="is-rounded" src="img/jana.jpeg" alt="Jana Soderlund">
