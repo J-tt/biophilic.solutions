@@ -94,11 +94,11 @@
                             <div class="info-card-media media">
                                 <div class="media-left">
                                     <figure class="image is-128x128">
-                                        <img class="is-rounded" src="img/jana.jpeg" alt="Jana Soderlund">
+                                        <img class="is-rounded" src="{{ .Params.image }}?nf_resize=smartcrop&w=200&h=200" alt="Jana Soderlund">
                                     </figure>
                                 </div>
                                 <div class="media-content">
-                                    <p class="title is-3 is-marginless">{{ .Name }}</p>
+                                    <p class="title is-3 is-marginless">{{ .Params.Name }}</p>
                                     <p class="title is-5 is-marginless">{{ .Title }}</p>
                                 </div>
                             </div>
