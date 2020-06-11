@@ -1,0 +1,31 @@
+{{ $sass := resources.Get "sass/main.scss" }}
+{{ $style := $sass | resources.ToCSS }}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ .Title}} | Biophilic Solutions</title>
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <script src="https://kit.fontawesome.com/f4c82098b8.js" crossorigin="anonymous"></script>
+    <!-- For Google -->
+    <meta name="description" content="{{ .Summary }}" />
+    <meta name="author" content="{{ .Params.author }}" />
+    <meta name="copyright" content="Biophilic Solutions" />
+
+    <!-- For Facebook -->
+    <meta property="og:title" content="{{ .Title }} | Biophilic Solutions" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://biophilic.solutions{{ .Params.thumbnail }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:description" content="{{ .Summary }}" />
+
+    <!-- For Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ .Title }} | Biophilic Solutions" />
+    <meta name="twitter:description" content="{{ .Summary }}" />
+    <meta name="twitter:image" content="https://biophilic.solutions{{ .Params.thumbnail }}" />
+  </head>
+  <body>
+	  <div class="wrapper">
