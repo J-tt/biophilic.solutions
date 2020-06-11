@@ -3,6 +3,7 @@ title: Design for Healing and Health
 date: 2020-06-11T05:50:16.321Z
 author: Jana Soderlund
 thumbnail: /img/picture1.jpg
+postSummary: "test"
 ---
 Recently, I presented at a symposium on biophilic design. My topic was designing for health and healing, and I shared a story from my book. The re-telling, and feedback I received, highlighted the power of stories; the relating of a human experience is a potent teacher. 
 
